@@ -15,6 +15,8 @@ class _TabPageSelector_DemoState extends State<TabPageSelector_Demo> {
     Icon(Icons.favorite_border),
   ];
 
+
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -32,12 +34,10 @@ class _TabPageSelector_DemoState extends State<TabPageSelector_Demo> {
                   ),
                   TabPageSelector(),
                   RaisedButton(onPressed: (){
-                    setState(() {
-                      TabController controller=DefaultTabController.of(context) as TabController;
-                      var x=controller.length;
-                      //print(x);
+                    final TabController controller=DefaultTabController.of(context) as TabController;
+                    if(controller.indexIsChanging){
                       controller.animateTo(icon.length-1);
-                    });
+                    }
                   },
                     child: Text('SKIP',style: TextStyle(color: Colors.orange),),
                   )
