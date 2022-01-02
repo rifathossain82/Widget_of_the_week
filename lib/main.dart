@@ -6,6 +6,10 @@ import 'package:widget_of_the_week/Builder_use_demo.dart';
 import 'package:widget_of_the_week/CheckedBox_ListTile_Demo.dart';
 import 'package:widget_of_the_week/Clip_Oval_Demo.dart';
 import 'package:widget_of_the_week/Clip_path_demo.dart';
+import 'package:widget_of_the_week/Color_filter.dart';
+import 'package:widget_of_the_week/Cupertino_action_sheet.dart';
+import 'package:widget_of_the_week/Draggable_scrollable_sheet.dart';
+import 'package:widget_of_the_week/Image_demo.dart';
 import 'package:widget_of_the_week/Indicator/Circular_progress_indigator_demo.dart';
 import 'package:widget_of_the_week/Indicator/CupertinoActivity_Indicator.dart';
 import 'package:widget_of_the_week/Device_info_plus_demo.dart';
@@ -27,6 +31,7 @@ import 'package:widget_of_the_week/Show_about_dialog_demo.dart';
 import 'package:widget_of_the_week/Slidable_Demo.dart';
 import 'package:widget_of_the_week/SnackBar_Demo.dart';
 import 'package:widget_of_the_week/SwitchListTile_Demo.dart';
+import 'package:widget_of_the_week/Toggle_buttons_demo.dart';
 import 'package:widget_of_the_week/animated_text_kit_demo.dart';
 import 'package:widget_of_the_week/padding_demo.dart';
 import 'package:widget_of_the_week/sensor/Sensor2.dart';
@@ -73,7 +78,7 @@ class _MyAppState extends State<MyApp> {
           resizeToAvoidBottomInset: false,
           backgroundColor: Colors.blueGrey[900],
           appBar: appbar,
-          body: Snackbar_demo(),
+          body: Draggable_scrollable_sheet(),
         )
     );
   }
