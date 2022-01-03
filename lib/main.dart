@@ -2,13 +2,18 @@ import 'dart:async';
 
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:widget_of_the_week/Alert_dialog_demo.dart';
+import 'package:widget_of_the_week/Animated_cross_fade/demo_1.dart';
+import 'package:widget_of_the_week/Animated_cross_fade/demo_2.dart';
 import 'package:widget_of_the_week/Builder_use_demo.dart';
 import 'package:widget_of_the_week/CheckedBox_ListTile_Demo.dart';
 import 'package:widget_of_the_week/Clip_Oval_Demo.dart';
 import 'package:widget_of_the_week/Clip_path_demo.dart';
 import 'package:widget_of_the_week/Color_filter.dart';
 import 'package:widget_of_the_week/Cupertino_action_sheet.dart';
+import 'package:widget_of_the_week/Data_table_demo.dart';
 import 'package:widget_of_the_week/Draggable_scrollable_sheet.dart';
+import 'package:widget_of_the_week/Fractionally_sizedbox_demo.dart';
 import 'package:widget_of_the_week/Image_demo.dart';
 import 'package:widget_of_the_week/Indicator/Circular_progress_indigator_demo.dart';
 import 'package:widget_of_the_week/Indicator/CupertinoActivity_Indicator.dart';
@@ -27,8 +32,10 @@ import 'package:widget_of_the_week/PageView/HomePage.dart';
 import 'package:widget_of_the_week/Physical_model_Demo.dart';
 import 'package:widget_of_the_week/Rotate_Box_Demo.dart';
 import 'package:widget_of_the_week/Scrollbar_Demo.dart';
+import 'package:widget_of_the_week/Selectable_text_demo.dart';
 import 'package:widget_of_the_week/Show_about_dialog_demo.dart';
 import 'package:widget_of_the_week/Slidable_Demo.dart';
+import 'package:widget_of_the_week/Slider_demo.dart';
 import 'package:widget_of_the_week/SnackBar_Demo.dart';
 import 'package:widget_of_the_week/SwitchListTile_Demo.dart';
 import 'package:widget_of_the_week/Toggle_buttons_demo.dart';
@@ -76,9 +83,9 @@ class _MyAppState extends State<MyApp> {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           resizeToAvoidBottomInset: false,
-          backgroundColor: Colors.blueGrey[900],
+          //backgroundColor: Colors.blueGrey[900],
           appBar: appbar,
-          body: Draggable_scrollable_sheet(),
+          body: Fractionally_sized_box(),
         )
     );
   }
