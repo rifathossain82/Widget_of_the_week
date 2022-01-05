@@ -33,6 +33,29 @@ class _Dismissible_list_demoState extends State<Dismissible_list_demo> {
         'https://source.unsplash.com/random?sig=10'),
   ];
 
+  List<List_item> items2 = [
+    List_item('Rifat', 'beginner of Programming.',
+        'https://source.unsplash.com/random?sig=1'),
+    List_item('Kawchar', 'beginner of Programming.',
+        'https://source.unsplash.com/random?sig=2'),
+    List_item('Jobayer', 'beginner of Programming.',
+        'https://source.unsplash.com/random?sig=3'),
+    List_item('Jony', 'beginner of Programming.',
+        'https://source.unsplash.com/random?sig=4'),
+    List_item('Shawal', 'beginner of Programming.',
+        'https://source.unsplash.com/random?sig=5'),
+    List_item('Emon', 'beginner of Programming.',
+        'https://source.unsplash.com/random?sig=6'),
+    List_item('Nishat', 'beginner of Programming.',
+        'https://source.unsplash.com/random?sig=7'),
+    List_item('Rakhi', 'beginner of Programming.',
+        'https://source.unsplash.com/random?sig=8'),
+    List_item('Arman', 'beginner of Programming.',
+        'https://source.unsplash.com/random?sig=9'),
+    List_item('Shifat', 'beginner of Programming.',
+        'https://source.unsplash.com/random?sig=10'),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,6 +75,14 @@ class _Dismissible_list_demoState extends State<Dismissible_list_demo> {
           );
         },
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          setState(() {
+            items=List.of(items2);
+          });
+        },
+        child: Icon(Icons.refresh),
+      ),
     );
   }
 
@@ -59,6 +90,25 @@ class _Dismissible_list_demoState extends State<Dismissible_list_demo> {
     setState(() {
       items.removeAt(index);
     });
+
+    switch(direction){
+      case DismissDirection.endToStart:
+        Scaffold.of(context)
+          ..hideCurrentSnackBar()
+          ..showSnackBar(
+            SnackBar(content: Text('Item has been deleted.',style: TextStyle(color: Colors.white),),backgroundColor: Colors.red,),
+          );
+        break;
+      case DismissDirection.startToEnd:
+        Scaffold.of(context)
+          ..hideCurrentSnackBar()
+          ..showSnackBar(
+            SnackBar(content: Text('Item has been archive.',style: TextStyle(color: Colors.white),),backgroundColor: Colors.green,),
+          );
+        break;
+      default:
+        break;
+    }
   }
 
   Widget buildListTile(List_item item) {
