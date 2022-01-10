@@ -34,6 +34,7 @@ import 'package:widget_of_the_week/Flexible_demo.dart';
 import 'package:widget_of_the_week/Fractionally_sizedbox_demo.dart';
 import 'package:widget_of_the_week/Future_builder_demo.dart';
 import 'package:widget_of_the_week/Hero_widget/Hero_widget_demo.dart';
+import 'package:widget_of_the_week/ImagePicker_Demo.dart';
 import 'package:widget_of_the_week/Image_demo.dart';
 import 'package:widget_of_the_week/Indexed_stack_demo.dart';
 import 'package:widget_of_the_week/Indicator/Circular_progress_indigator_demo.dart';
@@ -126,7 +127,7 @@ class _MyAppState extends State<MyApp> {
           resizeToAvoidBottomInset: false,
           //backgroundColor: Colors.blueGrey[900],
           appBar: appbar,
-          body: Opacity_demo(),
+          body: ImagePickerDemo(),
         )
     );
   }
