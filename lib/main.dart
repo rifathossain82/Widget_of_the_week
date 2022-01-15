@@ -16,6 +16,7 @@ import 'package:widget_of_the_week/Animated_positioned_demo.dart';
 import 'package:widget_of_the_week/Animated_switcher_demo.dart';
 import 'package:widget_of_the_week/Aspect_ratio_demo.dart';
 import 'package:widget_of_the_week/Back_drop_filter_demo.dart';
+import 'package:widget_of_the_week/BottomSheetDemo.dart';
 import 'package:widget_of_the_week/Builder_use_demo.dart';
 import 'package:widget_of_the_week/CheckedBox_ListTile_Demo.dart';
 import 'package:widget_of_the_week/Clip_Oval_Demo.dart';
@@ -27,6 +28,8 @@ import 'package:widget_of_the_week/Cupertino_action_sheet.dart';
 import 'package:widget_of_the_week/Data_table_demo.dart';
 import 'package:widget_of_the_week/Dismissible_demo/Dismissible_list_demo.dart';
 import 'package:widget_of_the_week/Draggable_scrollable_sheet.dart';
+import 'package:widget_of_the_week/DropDownButton/Example1_esay.dart';
+import 'package:widget_of_the_week/DropDownButton/Example2_DeepDive.dart';
 import 'package:widget_of_the_week/Fade_Transition_demo.dart';
 import 'package:widget_of_the_week/Fade_in_image.dart';
 import 'package:widget_of_the_week/Fitted_box_demo.dart';
@@ -72,6 +75,7 @@ import 'package:widget_of_the_week/Slider_demo.dart';
 import 'package:widget_of_the_week/Sliver_list_sliver_grid_demo.dart';
 import 'package:widget_of_the_week/SnackBar_Demo.dart';
 import 'package:widget_of_the_week/Spacer_demo.dart';
+import 'package:widget_of_the_week/SpeedDial_menu.dart';
 import 'package:widget_of_the_week/Stack_demo.dart';
 import 'package:widget_of_the_week/Stream_builder_demo.dart';
 import 'package:widget_of_the_week/SwitchListTile_Demo.dart';
@@ -127,7 +131,7 @@ class _MyAppState extends State<MyApp> {
           resizeToAvoidBottomInset: false,
           //backgroundColor: Colors.blueGrey[900],
           appBar: appbar,
-          body: ImagePickerDemo(),
+          body: SpeedDial_menu(),
         )
     );
   }

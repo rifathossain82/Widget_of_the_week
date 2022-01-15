@@ -49,6 +49,7 @@ dependencies:
   transparent_image: ^2.0.0
   image_picker: ^0.8.4+4
   path_provider: ^2.0.8
+  flutter_speed_dial: ^5.0.0+1
 
 dev_dependencies:
   flutter_test:
