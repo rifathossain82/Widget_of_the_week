@@ -7,6 +7,7 @@ import 'package:widget_of_the_week/Alert_dialog_demo.dart';
 import 'package:widget_of_the_week/Align_demo.dart';
 import 'package:widget_of_the_week/Animated_builder/Animated_builder_demo.dart';
 import 'package:widget_of_the_week/Animated_builder/Slide_transition_demo.dart';
+import 'package:widget_of_the_week/Animated_cross_fade/demo3.dart';
 import 'package:widget_of_the_week/Animated_cross_fade/demo_1.dart';
 import 'package:widget_of_the_week/Animated_cross_fade/demo_2.dart';
 import 'package:widget_of_the_week/Animated_list_demo/Animated_list.dart';
@@ -26,6 +27,7 @@ import 'package:widget_of_the_week/Color_filter.dart';
 import 'package:widget_of_the_week/Constraints_box_demo.dart';
 import 'package:widget_of_the_week/Cupertino_action_sheet.dart';
 import 'package:widget_of_the_week/Data_table_demo.dart';
+import 'package:widget_of_the_week/Date&Time_picker.dart';
 import 'package:widget_of_the_week/Dismissible_demo/Dismissible_list_demo.dart';
 import 'package:widget_of_the_week/Draggable_scrollable_sheet.dart';
 import 'package:widget_of_the_week/DropDownButton/Example1_esay.dart';
@@ -56,6 +58,7 @@ import 'package:widget_of_the_week/ListView_demo.dart';
 import 'package:widget_of_the_week/List_While_ScrollView_demo.dart';
 import 'package:widget_of_the_week/Location_demo.dart';
 import 'package:widget_of_the_week/Media_query_demo.dart';
+import 'package:widget_of_the_week/NavigationRial_demo/Home_navigation_rail.dart';
 import 'package:widget_of_the_week/Notification_listener_demo.dart';
 import 'package:widget_of_the_week/Opacity_demo.dart';
 import 'package:widget_of_the_week/Orientation_builder_demo.dart';
@@ -89,6 +92,7 @@ import 'package:widget_of_the_week/animated_text_kit_demo.dart';
 import 'package:widget_of_the_week/padding_demo.dart';
 import 'package:widget_of_the_week/sensor/Sensor2.dart';
 import 'package:widget_of_the_week/sensor/Sensor_plus.dart';
+import 'package:widget_of_the_week/spalash_screen/Home_splash.dart';
 
 import 'Animated_icon_demo.dart';
 import 'BackgroundImage_App_Demo.dart';
@@ -133,7 +137,7 @@ class _MyAppState extends State<MyApp> {
           resizeToAvoidBottomInset: false,
           //backgroundColor: Colors.blueGrey[900],
           appBar: appbar,
-          body: ExitApp_Programatically(),
+          body: Home_Navigation_Rail(),
         )
     );
   }
