@@ -30,6 +30,7 @@ import 'package:widget_of_the_week/Dismissible_demo/Dismissible_list_demo.dart';
 import 'package:widget_of_the_week/Draggable_scrollable_sheet.dart';
 import 'package:widget_of_the_week/DropDownButton/Example1_esay.dart';
 import 'package:widget_of_the_week/DropDownButton/Example2_DeepDive.dart';
+import 'package:widget_of_the_week/ExitApp_Programatically.dart';
 import 'package:widget_of_the_week/Fade_Transition_demo.dart';
 import 'package:widget_of_the_week/Fade_in_image.dart';
 import 'package:widget_of_the_week/Fitted_box_demo.dart';
@@ -90,6 +91,7 @@ import 'package:widget_of_the_week/sensor/Sensor2.dart';
 import 'package:widget_of_the_week/sensor/Sensor_plus.dart';
 
 import 'Animated_icon_demo.dart';
+import 'BackgroundImage_App_Demo.dart';
 import 'Shader_Mask_Demo.dart';
 import 'TabPageSelector_Demo.dart';
 
@@ -131,7 +133,7 @@ class _MyAppState extends State<MyApp> {
           resizeToAvoidBottomInset: false,
           //backgroundColor: Colors.blueGrey[900],
           appBar: appbar,
-          body: SpeedDial_menu(),
+          body: ExitApp_Programatically(),
         )
     );
   }
