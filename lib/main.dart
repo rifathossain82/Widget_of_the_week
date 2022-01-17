@@ -14,11 +14,13 @@ import 'package:widget_of_the_week/Animated_list_demo/Animated_list.dart';
 import 'package:widget_of_the_week/Animated_opacity_demo.dart';
 import 'package:widget_of_the_week/Animated_padding_demo.dart';
 import 'package:widget_of_the_week/Animated_positioned_demo.dart';
+import 'package:widget_of_the_week/Animated_splash/splash_screen.dart';
 import 'package:widget_of_the_week/Animated_switcher_demo.dart';
 import 'package:widget_of_the_week/Aspect_ratio_demo.dart';
 import 'package:widget_of_the_week/Back_drop_filter_demo.dart';
 import 'package:widget_of_the_week/BottomSheetDemo.dart';
 import 'package:widget_of_the_week/Builder_use_demo.dart';
+import 'package:widget_of_the_week/Carousel_slider/CarouselSlider_Demo.dart';
 import 'package:widget_of_the_week/CheckedBox_ListTile_Demo.dart';
 import 'package:widget_of_the_week/Clip_Oval_Demo.dart';
 import 'package:widget_of_the_week/Clip_R__rect_demo.dart';
@@ -90,6 +92,7 @@ import 'package:widget_of_the_week/Transform_demo.dart';
 import 'package:widget_of_the_week/Value_listenable_builder_demo.dart';
 import 'package:widget_of_the_week/animated_text_kit_demo.dart';
 import 'package:widget_of_the_week/padding_demo.dart';
+import 'package:widget_of_the_week/pass_data/PageOne_passData.dart';
 import 'package:widget_of_the_week/sensor/Sensor2.dart';
 import 'package:widget_of_the_week/sensor/Sensor_plus.dart';
 import 'package:widget_of_the_week/spalash_screen/Home_splash.dart';
@@ -137,7 +140,7 @@ class _MyAppState extends State<MyApp> {
           resizeToAvoidBottomInset: false,
           //backgroundColor: Colors.blueGrey[900],
           appBar: appbar,
-          body: Home_Navigation_Rail(),
+          body: CarouselSlider_Demo(),
         )
     );
   }
