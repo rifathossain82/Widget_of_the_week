@@ -54,6 +54,7 @@ dependencies:
   rive: ^0.8.1
   carousel_slider: ^4.0.0
   smooth_page_indicator: ^1.0.0+2
+  introduction_screen: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -89,6 +90,10 @@ flutter:
     - images/large_img.jpg
     - images/my_pic.JPG
     - animation/skills_demo.riv
+    - images/book1.png
+    - images/book2.png
+    - images/book3.png
+    - images/book4.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -54,6 +54,7 @@ import 'package:widget_of_the_week/Image_filtered_demo.dart';
 import 'package:widget_of_the_week/Indicator/Linear_progress_iindicator_demo.dart';
 import 'package:widget_of_the_week/Ingnore_pointer.dart';
 import 'package:widget_of_the_week/InteractiveViewr_demo.dart';
+import 'package:widget_of_the_week/Introduction_Screen/IntroductionScreen.dart';
 import 'package:widget_of_the_week/Layout_builder_demo.dart';
 import 'package:widget_of_the_week/Limited_box_demo.dart';
 import 'package:widget_of_the_week/ListView_demo.dart';
@@ -136,12 +137,15 @@ class _MyAppState extends State<MyApp> {
         title: 'Widget Of The Week',
         theme: ThemeData(primarySwatch: Colors.deepOrange),
         debugShowCheckedModeBanner: false,
-        home: Scaffold(
+        home: IntroductionScreen_demo()
+    );
+  }
+}
+/*
+Scaffold(
           resizeToAvoidBottomInset: false,
           //backgroundColor: Colors.blueGrey[900],
           appBar: appbar,
           body: CarouselSlider_Demo(),
         )
-    );
-  }
-}
+ */
