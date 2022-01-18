@@ -21,6 +21,7 @@ import 'package:widget_of_the_week/Back_drop_filter_demo.dart';
 import 'package:widget_of_the_week/BottomSheetDemo.dart';
 import 'package:widget_of_the_week/Builder_use_demo.dart';
 import 'package:widget_of_the_week/Carousel_slider/CarouselSlider_Demo.dart';
+import 'package:widget_of_the_week/Check_Connection.dart';
 import 'package:widget_of_the_week/CheckedBox_ListTile_Demo.dart';
 import 'package:widget_of_the_week/Clip_Oval_Demo.dart';
 import 'package:widget_of_the_week/Clip_R__rect_demo.dart';
@@ -137,15 +138,15 @@ class _MyAppState extends State<MyApp> {
         title: 'Widget Of The Week',
         theme: ThemeData(primarySwatch: Colors.deepOrange),
         debugShowCheckedModeBanner: false,
-        home: IntroductionScreen_demo()
+        home: Scaffold(
+          resizeToAvoidBottomInset: false,
+          //backgroundColor: Colors.blueGrey[900],
+          appBar: appbar,
+          body: Check_Connection(),
+        )
     );
   }
 }
 /*
-Scaffold(
-          resizeToAvoidBottomInset: false,
-          //backgroundColor: Colors.blueGrey[900],
-          appBar: appbar,
-          body: CarouselSlider_Demo(),
-        )
+
  */

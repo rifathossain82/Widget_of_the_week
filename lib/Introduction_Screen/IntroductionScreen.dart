@@ -2,6 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:widget_of_the_week/Introduction_Screen/Home_intro.dart';
 
+
+//attention
+/*
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        title: 'Widget Of The Week',
+        theme: ThemeData(primarySwatch: Colors.deepOrange),
+        debugShowCheckedModeBanner: false,
+        home: IntroductionScreen_demo()
+    );
+  }
+}
+ */
+
+
 class IntroductionScreen_demo extends StatelessWidget {
   IntroductionScreen_demo({Key? key}) : super(key: key);
 
