@@ -57,6 +57,7 @@ dependencies:
   introduction_screen: ^2.1.0
   connectivity_plus: ^2.2.0
   device_preview: ^1.0.0
+  shimmer: ^2.0.0
 
 dev_dependencies:
   flutter_test:

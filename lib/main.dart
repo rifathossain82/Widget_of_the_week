@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:widget_of_the_week/Absorb_pointer_demo.dart';
 import 'package:widget_of_the_week/Alert_dialog_demo.dart';
 import 'package:widget_of_the_week/Align_demo.dart';
+import 'package:widget_of_the_week/Animated_Flowting%20action%20Buttons/Home_flow.dart';
 import 'package:widget_of_the_week/Animated_builder/Animated_builder_demo.dart';
 import 'package:widget_of_the_week/Animated_builder/Slide_transition_demo.dart';
 import 'package:widget_of_the_week/Animated_cross_fade/demo3.dart';
@@ -76,6 +77,7 @@ import 'package:widget_of_the_week/Rotate_Box_Demo.dart';
 import 'package:widget_of_the_week/Scrollbar_Demo.dart';
 import 'package:widget_of_the_week/Selectable_text_demo.dart';
 import 'package:widget_of_the_week/Semantics_demo.dart';
+import 'package:widget_of_the_week/Shimmer_demo/Home_shimmer.dart';
 import 'package:widget_of_the_week/Show_about_dialog_demo.dart';
 import 'package:widget_of_the_week/Sized_box_demo.dart';
 import 'package:widget_of_the_week/Slidable_Demo.dart';
@@ -141,8 +143,8 @@ class _MyAppState extends State<MyApp> {
         home: Scaffold(
           resizeToAvoidBottomInset: false,
           //backgroundColor: Colors.blueGrey[900],
-          appBar: appbar,
-          body: Check_Connection(),
+          appBar: appbar_shimmer,
+          body: Home_shimmer(),
         )
     );
   }
