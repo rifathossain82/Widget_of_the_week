@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:widget_of_the_week/Absorb_pointer_demo.dart';
 import 'package:widget_of_the_week/Alert_dialog_demo.dart';
 import 'package:widget_of_the_week/Align_demo.dart';
+import 'package:widget_of_the_week/AnimatedContainerDemo.dart';
 import 'package:widget_of_the_week/Animated_Flowting%20action%20Buttons/Home_flow.dart';
 import 'package:widget_of_the_week/Animated_builder/Animated_builder_demo.dart';
 import 'package:widget_of_the_week/Animated_builder/Slide_transition_demo.dart';
@@ -64,6 +65,7 @@ import 'package:widget_of_the_week/List_While_ScrollView_demo.dart';
 import 'package:widget_of_the_week/Location_demo.dart';
 import 'package:widget_of_the_week/Media_query_demo.dart';
 import 'package:widget_of_the_week/NavigationRial_demo/Home_navigation_rail.dart';
+import 'package:widget_of_the_week/New%20Bottom%20Navigation%20Bar/home_navigation.dart';
 import 'package:widget_of_the_week/Notification_listener_demo.dart';
 import 'package:widget_of_the_week/Opacity_demo.dart';
 import 'package:widget_of_the_week/Orientation_builder_demo.dart';
@@ -82,6 +84,7 @@ import 'package:widget_of_the_week/Show_about_dialog_demo.dart';
 import 'package:widget_of_the_week/Sized_box_demo.dart';
 import 'package:widget_of_the_week/Slidable_Demo.dart';
 import 'package:widget_of_the_week/Slider_demo.dart';
+import 'package:widget_of_the_week/SliverGridView_Demo.dart';
 import 'package:widget_of_the_week/Sliver_list_sliver_grid_demo.dart';
 import 'package:widget_of_the_week/SnackBar_Demo.dart';
 import 'package:widget_of_the_week/Spacer_demo.dart';
@@ -140,15 +143,15 @@ class _MyAppState extends State<MyApp> {
         title: 'Widget Of The Week',
         theme: ThemeData(primarySwatch: Colors.deepOrange),
         debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          resizeToAvoidBottomInset: false,
-          //backgroundColor: Colors.blueGrey[900],
-          appBar: appbar_shimmer,
-          body: Home_shimmer(),
-        )
+        home: SliverGridView_Demo()
     );
   }
 }
 /*
-
+Scaffold(
+          resizeToAvoidBottomInset: false,
+          //backgroundColor: Colors.blueGrey[900],
+          appBar: appbar,
+          body: Home(),
+        )
  */
